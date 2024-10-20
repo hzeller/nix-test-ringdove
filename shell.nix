@@ -1,8 +1,9 @@
+# nixpks checked out at feature-20241019-ringdove
 { pkgs ? import /home/hzeller/src/my/nixpkgs {} }:
 let
   local-librnd = pkgs.librnd.override {
     withGtk2 = true;
-    withGtk4 = true;
+    withGtk4 = false;
 
     UnstableRevision = 37499;
     UnstableHash = "sha256-aJuJhrj2/g61j4/IewKtp2EEEv4XSmApdylslue3Q2k=";
